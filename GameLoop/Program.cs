@@ -7,6 +7,7 @@ namespace GameLoop
 {
     static class Program
     {
+        static FastLoop _fastLoop = new FastLoop(GameLoop);
         /// <summary>
         /// 应用程序的主入口点。
         /// </summary>
@@ -20,6 +21,7 @@ namespace GameLoop
 
         static void GameLoop()
         {
+            System.Console.WriteLine("loop");
         }
     }
 }
